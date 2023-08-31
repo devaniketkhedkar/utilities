@@ -32,17 +32,14 @@ if %Month%==10 set LastDay=31 & goto foundate
 if %Month%==11 set LastDay=30 & goto foundate
 if %Month%==12 set LastDay=31 & goto foundate
 
-
 :foundate
 echo The year is: %Year%
 echo The month is: %Month%
 echo First day of this month is: %FirstDay%
 echo Last day of this month is: %LastDay%
 
-
 FOR /L %%X IN (1,1,%LastDay%) DO (
-	ECHO %%X
+	REMECHO %%X
 	MKDIR %%X-%Month%-%Year% > NUL
-	
 	ECHO %msg% >"%%X-%Month%-%Year%\%%X-%Month%-%Year%.txt" 
 )
