@@ -3,7 +3,7 @@ Small Daily Use Utilities
 1. Create Daywise folders and Daywise File in it.
 
 
-We Work Everyday in Office, while working in office I have developed a habit of naoting down the things I have to do today.
+We Work Everyday in Office, while working in office I have developed a habit of noting down the things I have to do today.
 With this I save important notes of Special thing done in that day, a screenshot of an issue I am working on.
 So, I keep them in folder of that day and a text file of that day. It helps me to find out what I did on a particular day while I was working.
 This resulted in proper Journaling on my everyday work. Even while leaving office I create a folder and a text file for next day mentioning
