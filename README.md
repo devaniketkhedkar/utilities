@@ -1,4 +1,4 @@
-# Daily Work Journal Utility V1.0
+# Daily Work Journal Utility V1.0 - Batch Script
 # create all days folders and text files of month at once
 Small Daily Use Utilities 
 1. Create Daywise folders and Daywise File in it.
