@@ -1,18 +1,18 @@
-# create_all_days_folders_and_text_files_of_month_at_once
+# Daily Work Journal Utility V1.0
+# create all days folders and text files of month at once
 Small Daily Use Utilities 
 1. Create Daywise folders and Daywise File in it.
 
-
 We Work Everyday in Office, while working in office I have developed a habit of noting down the things I have to do today.
 With this I save important notes of Special thing done in that day, a screenshot of an issue I am working on.
-So, I keep them in folder of that day and a text file of that day. It helps me to find out what I did on a particular day while I was working.
-This resulted in proper Journaling on my everyday work. Even while leaving office I create a folder and a text file for next day mentioning
-what I have to do tomorrow.
+So, I keep them in folder of that day and a text file of that day. 
+
+It helps me to find out what I did on a particular day while I was working. This resulted in proper Journaling on my everyday work. 
+Even while leaving office I create a folder and a text file for next day mentioning what I have to do tomorrow.
+
 Challenge here was to create a folder of that day and a text file with same name everyday.
 So to solve this I have created following BATCH Script, which can help you to create no of folders and txt files in them of the day at once.
 Relatively I have known BATCH Scripting a little, I have digged following from Internet.
-Doing this Journaling will let you have all your data, your workaround on the same organized which will be handy at any time.
-
 
 Follow these steps to use this utility.
 Purpose    : To create Daywise Folder and Text file of each day in Month to write daily notes.
@@ -26,5 +26,7 @@ How To Use :
 7. By using this utility, you can keep all your data organized and easily accessible at any time.
 8. You can also modify the code to customize the text in the text file or add additional features to the script.
 
+Feel free to adjust the content to better fit your utility’s features and your personal style. 
 
-Happy Journaling readers...!
+If you need further customization or have specific requirements, let me know, and I’ll be happy to assist!
+Happy Journaling readers...! ✌
