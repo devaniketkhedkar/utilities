@@ -1,12 +1,15 @@
 REM Author     : Aniket Khedkar
+REM GITHUB ID  : devaniketkhedkar
 REM Purpose    : To create Daywise Folder and Text file of each day in Month to write daily notes.
-REM How To Use : 
-REM 1. Copy paste this utility where you want to create your folders.
-REM 2. Run this utility in a folder where you want to create folders and text file for each day in a month.
-REM 2. Run this utility and enter Month no in MM format. It will create folders and txt file in it for each day in month.
+REM How To Use :
+REM Step 1. Copy paste this utility where you want to create your folders.
+REM Step 2. Run this utility in a folder where you want to create folders and text file for each day in a month.
+REM Step 3. Run this utility and enter Month no in MM format. It will create folders and txt file in it for each day in month.
 
 @echo off
+setlocal enabledelayedexpansion
 
+REM Variables
 set FirstDay=01
 set Year=%date:~6,4%
 REM set Month=%date:~3,2%
@@ -17,8 +20,9 @@ REM echo Month is: %Month%
 REM echo Year is : %Year%
 REM pause
 
-set msg=Bhole baba, I thank you for sunshine, Thank you for rain, Thank you for joy, Thank you for pain, It's a beautiful Day. Good Day Boss.
+set msg=Welcome Message
 
+REM deciding No of Days in Month
 if %Month%==01 set LastDay=31 & goto foundate
 if %Month%==02 set LastDay=28 & goto foundate
 if %Month%==03 set LastDay=31 & goto foundate
@@ -39,7 +43,12 @@ echo First day of this month is: %FirstDay%
 echo Last day of this month is: %LastDay%
 
 FOR /L %%X IN (1,1,%LastDay%) DO (
-	REMECHO %%X
-	MKDIR %%X-%Month%-%Year% > NUL
-	ECHO %msg% >"%%X-%Month%-%Year%\%%X-%Month%-%Year%.txt" 
+    set Day=%%X
+    if %%X LSS 10 set Day=0%%X
+    ECHO !Day!-%Month%-%Year%
+    MKDIR "!Day!-%Month%-%Year%" > NUL
+    ECHO %msg% >"!Day!-%Month%-%Year%\!Day!-%Month%-%Year%.txt"
 )
+
+echo Enter month no in MM format.
+set /p Month= Type Month in MM format : 
